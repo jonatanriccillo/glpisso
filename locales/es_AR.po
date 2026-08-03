@@ -1,0 +1,392 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sso 0.1.0\n"
+"Language: es_AR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "SSO"
+msgstr "SSO"
+
+msgid "Identity provider"
+msgid_plural "Identity providers"
+msgstr[0] "Proveedor de identidad"
+msgstr[1] "Proveedores de identidad"
+
+msgid "A name is required"
+msgstr "El nombre es obligatorio"
+
+msgid "Claim mapping must be valid JSON"
+msgstr "El mapeo de claims debe ser JSON válido"
+
+msgid "Protocol"
+msgstr "Protocolo"
+
+msgid "SAML 2.0"
+msgstr "SAML 2.0"
+
+msgid "OpenID Connect"
+msgstr "OpenID Connect"
+
+msgid "Issuer URL (discovery)"
+msgstr "URL del issuer (discovery)"
+
+msgid "Scopes"
+msgstr "Scopes"
+
+msgid "Client ID"
+msgstr "Client ID"
+
+msgid "Client secret"
+msgstr "Client secret"
+
+msgid "(unchanged)"
+msgstr "(sin cambios)"
+
+msgid "Require verified email"
+msgstr "Exigir email verificado"
+
+msgid "IdP Entity ID"
+msgstr "Entity ID del IdP"
+
+msgid "NameID format"
+msgstr "Formato de NameID"
+
+msgid "IdP SSO URL"
+msgstr "URL de SSO del IdP"
+
+msgid "IdP SLO URL"
+msgstr "URL de SLO del IdP"
+
+msgid "IdP X.509 certificate"
+msgstr "Certificado X.509 del IdP"
+
+msgid "Rollover certificate (optional)"
+msgstr "Certificado de rotación (opcional)"
+
+msgid "Sign AuthnRequests"
+msgstr "Firmar los AuthnRequests"
+
+msgid "Require encrypted assertions"
+msgstr "Exigir assertions cifradas"
+
+msgid "SP certificate (optional)"
+msgstr "Certificado del SP (opcional)"
+
+msgid "SP private key (optional)"
+msgstr "Clave privada del SP (opcional)"
+
+msgid "SP metadata URL (register this in your IdP)"
+msgstr "URL de metadata del SP (registrala en tu IdP)"
+
+msgid "Redirect URI (register this in your IdP)"
+msgstr "Redirect URI (registrala en tu IdP)"
+
+msgid "Import IdP metadata (XML or URL)"
+msgstr "Importar metadata del IdP (XML o URL)"
+
+msgid "Import metadata"
+msgstr "Importar metadata"
+
+msgid "IdP metadata imported"
+msgstr "Metadata del IdP importada"
+
+msgid "Metadata import failed: %s"
+msgstr "Falló el import de metadata: %s"
+
+msgid "no usable IdP data found"
+msgstr "no se encontraron datos utilizables del IdP"
+
+msgid "Provisioning and matching"
+msgstr "Aprovisionamiento y matching"
+
+msgid "Create unknown users (JIT)"
+msgstr "Crear usuarios desconocidos (JIT)"
+
+msgid "OFF: only pre-existing users can log in"
+msgstr "NO: sólo pueden loguear usuarios preexistentes"
+
+msgid "Update user fields on each login"
+msgstr "Actualizar los campos del usuario en cada login"
+
+msgid "Match existing users by"
+msgstr "Matchear usuarios existentes por"
+
+msgid "Apply authorization rules"
+msgstr "Aplicar reglas de autorización"
+
+msgid "On every login"
+msgstr "En cada login"
+
+msgid "Only when the user is created"
+msgstr "Sólo al crear el usuario"
+
+msgid "Default profile (JIT)"
+msgstr "Perfil por defecto (JIT)"
+
+msgid "Default entity (JIT)"
+msgstr "Entidad por defecto (JIT)"
+
+msgid "Groups claim/attribute"
+msgstr "Claim/atributo de grupos"
+
+msgid "Email domain allowlist (CSV, empty = all)"
+msgstr "Dominios de email permitidos (CSV, vacío = todos)"
+
+msgid "Claim mapping (JSON: GLPI field → claim)"
+msgstr "Mapeo de claims (JSON: campo GLPI → claim)"
+
+msgid "Login page button"
+msgstr "Botón en la página de login"
+
+msgid "Button label (empty = name)"
+msgstr "Etiqueta del botón (vacío = nombre)"
+
+msgid "Icon (tabler class)"
+msgstr "Ícono (clase tabler)"
+
+msgid "Add an identity provider"
+msgstr "Agregar un proveedor de identidad"
+
+msgid "SSO — General configuration"
+msgstr "SSO — Configuración general"
+
+msgid "General configuration"
+msgstr "Configuración general"
+
+msgid "Authentication log"
+msgstr "Registro de autenticación"
+
+msgid "Public base URL"
+msgstr "URL base pública"
+
+msgid "Empty = GLPI URL (%s)"
+msgstr "Vacío = URL de GLPI (%s)"
+
+msgid "Forced SSO (auto-redirect to default IdP)"
+msgstr "SSO forzado (auto-redirect al IdP por defecto)"
+
+msgid "Bypass: add ?noSSO=1 to the login URL"
+msgstr "Bypass: agregar ?noSSO=1 a la URL de login"
+
+msgid "Default identity provider"
+msgstr "Proveedor de identidad por defecto"
+
+msgid "Home realm discovery (pick IdP by email domain)"
+msgstr "Home realm discovery (elegir el IdP por dominio del email)"
+
+msgid "Adopt pre-existing users on first match"
+msgstr "Adoptar usuarios preexistentes al matchear"
+
+msgid "Links the account and switches authtype to EXTERNAL"
+msgstr "Vincula la cuenta y pasa el authtype a EXTERNAL"
+
+msgid "Fail closed (deny login when no rule matched)"
+msgstr "Fail closed (rechazar el login si ninguna regla matcheó)"
+
+msgid "Log retention (days)"
+msgstr "Retención del registro (días)"
+
+msgid "Debug logging"
+msgstr "Registro de debug"
+
+msgid "Configuration saved"
+msgstr "Configuración guardada"
+
+msgid "SSO authentication log"
+msgstr "Registro de autenticación SSO"
+
+msgid "Event"
+msgstr "Evento"
+
+msgid "Level"
+msgstr "Nivel"
+
+msgid "Message"
+msgstr "Mensaje"
+
+msgid "IP address"
+msgstr "Dirección IP"
+
+msgid "SSO pending request"
+msgstr "Solicitud SSO pendiente"
+
+msgid "SSO identity link"
+msgid_plural "SSO identity links"
+msgstr[0] "Vínculo de identidad SSO"
+msgstr[1] "Vínculos de identidad SSO"
+
+msgid "Purge expired SSO flow state (tokens, tickets, replay cache)"
+msgstr "Purgar el estado de flujo SSO vencido (tokens, tickets, replay cache)"
+
+msgid "Purge SSO authentication log beyond retention"
+msgstr "Purgar el registro de autenticación SSO fuera de retención"
+
+msgid "Log in with %s"
+msgstr "Iniciar sesión con %s"
+
+msgid "Authentication failed"
+msgstr "Falló la autenticación"
+
+msgid "Unknown or inactive identity provider"
+msgstr "Proveedor de identidad desconocido o inactivo"
+
+msgid "This provider protocol is not available yet"
+msgstr "El protocolo de este proveedor todavía no está disponible"
+
+msgid "Invalid or expired login ticket"
+msgstr "Ticket de login inválido o vencido"
+
+msgid "Your account is not allowed to log in"
+msgstr "Tu cuenta no tiene permitido iniciar sesión"
+
+msgid "Back to login"
+msgstr "Volver al login"
+
+msgid "SSO authorization rules"
+msgstr "Reglas de autorización SSO"
+
+msgid "Email domain"
+msgstr "Dominio del email"
+
+msgid "Groups (IdP claim)"
+msgstr "Grupos (claim del IdP)"
+
+msgid "Claim: %s"
+msgstr "Claim: %s"
+
+msgid "Add to group"
+msgstr "Agregar al grupo"
+
+msgid "Deny login"
+msgstr "Denegar el login"
+
+msgid "Continue with SSO"
+msgstr "Continuar con SSO"
+
+msgid "your.email@company.com"
+msgstr "tu.email@empresa.com"
+
+msgid "No SSO configured for this domain, please use the local login form"
+msgstr "No hay SSO configurado para ese dominio: usá el formulario local"
+
+msgid "Log out from the identity provider too (Single Logout)"
+msgstr "Cerrar también la sesión del proveedor de identidad (Single Logout)"
+
+msgid "IdP certificate"
+msgstr "Certificado del IdP"
+
+msgid "SP certificate"
+msgstr "Certificado del SP"
+
+msgid "%1$s expired %2$d days ago"
+msgstr "%1$s venció hace %2$d días"
+
+msgid "%1$s expires in %2$d days"
+msgstr "%1$s vence en %2$d días"
+
+msgid "Warn about SAML certificates nearing expiration"
+msgstr "Avisar sobre certificados SAML por vencer"
+
+msgid "SCIM provisioning"
+msgstr "Aprovisionamiento SCIM"
+
+msgid "Enable SCIM"
+msgstr "Habilitar SCIM"
+
+msgid "SCIM base URL"
+msgstr "URL base de SCIM"
+
+msgid "SCIM Bearer token"
+msgstr "Token Bearer de SCIM"
+
+msgid "Configured"
+msgstr "Configurado"
+
+msgid "Not configured"
+msgstr "No configurado"
+
+msgid "Generate new token"
+msgstr "Generar token nuevo"
+
+msgid "Revoke token"
+msgstr "Revocar token"
+
+msgid "The clear-text token is shown only once when generated."
+msgstr "El token en texto claro se muestra una sola vez al generarlo."
+
+msgid "SCIM token (copy it now; it will not be shown again): %s"
+msgstr "Token SCIM (copialo ahora; no se volverá a mostrar): %s"
+
+msgid "SCIM token revoked"
+msgstr "Token SCIM revocado"
+
+msgid "SCIM managed group"
+msgid_plural "SCIM managed groups"
+msgstr[0] "Grupo administrado por SCIM"
+msgstr[1] "Grupos administrados por SCIM"
+
+msgid "The icon class contains invalid characters"
+msgstr "La clase del ícono contiene caracteres no válidos"
+
+msgid "Copy URL"
+msgstr "Copiar URL"
+
+msgid "Copy"
+msgstr "Copiar"
+
+msgid "Copied"
+msgstr "Copiado"
+
+msgid "Button label"
+msgstr "Etiqueta del botón"
+
+msgid "Uses the provider name when empty"
+msgstr "Si queda vacío, usa el nombre del proveedor"
+
+msgid "Button preview"
+msgstr "Vista previa del botón"
+
+msgid "Choose an icon"
+msgstr "Elegí un ícono"
+
+msgid "Secure provider"
+msgstr "Proveedor seguro"
+
+msgid "Generic"
+msgstr "Genérico"
+
+msgid "Custom Tabler class"
+msgstr "Clase Tabler personalizada"
+
+msgid "Only use this if none of the presets fits."
+msgstr "Usá esta opción solo si ninguno de los íconos predeterminados sirve."
+
+msgid "General settings"
+msgstr "Configuración general"
+
+msgid "Custom: %s"
+msgstr "Personalizado: %s"
+
+msgid "Display on login"
+msgstr "Mostrar en la pantalla de inicio de sesión"
+
+msgid "Button"
+msgstr "Botón"
+
+msgid "Icon only"
+msgstr "Solo icono"
+
+msgid "Login preview"
+msgstr "Vista previa en el inicio de sesión"
+
+msgid "or continue with"
+msgstr "o continuá con"
+
+msgid "Single sign-on"
+msgstr "Inicio de sesión único"
+
+msgid "Use your organization account"
+msgstr "Usá tu cuenta de la organización"

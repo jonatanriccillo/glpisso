@@ -1,0 +1,17 @@
+{
+    "name": "jonatanriccillo/glpi-sso",
+    "description": "SAML 2.0 + OIDC + SCIM 2.0 single sign-on plugin for GLPI 11",
+    "type": "glpi-plugin",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "php": ">=8.2",
+        "ext-openssl": "*",
+        "ext-curl": "*",
+        "ext-dom": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*"
+    },
+    "config": {
+        "optimize-autoloader": false
+    }
+}

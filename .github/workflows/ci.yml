@@ -1,0 +1,42 @@
+name: "Continuous integration"
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+
+jobs:
+  # Workflow oficial de plugins GLPI: parallel-lint siempre; PHPCS/PHPStan/
+  # PHPUnit sólo si sus configs existen en el repo (hoy: sólo lint).
+  ci:
+    strategy:
+      fail-fast: false
+      matrix:
+        php-version: ["8.2", "8.3"]
+    uses: "glpi-project/plugin-ci-workflows/.github/workflows/continuous-integration.yml@v1"
+    with:
+      plugin-key: "sso"
+      glpi-version: "11.0.x"
+      php-version: "${{ matrix.php-version }}"
+      db-image: "mariadb:10.11"
+
+  # Suite propia de tests puros (núcleos de seguridad OIDC/redirect/claims):
+  # corre con PHP pelado, sin framework ni DB.
+  unit:
+    strategy:
+      fail-fast: false
+      matrix:
+        php-version: ["8.2", "8.3", "8.4"]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "${{ matrix.php-version }}"
+          extensions: openssl, curl, dom, json, mbstring
+      - name: Lint
+        run: find . -name '*.php' -not -path './vendor/*' -print0 | xargs -0 -n1 php -l
+      - name: Tests puros
+        run: php tests/php/run.php
+      - name: Vendor íntegro
+        run: sh tools/verify_vendor.sh

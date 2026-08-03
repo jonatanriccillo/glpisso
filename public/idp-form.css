@@ -1,0 +1,377 @@
+.sso-idp-form {
+    --sso-border: var(--tblr-border-color, #d9dfe7);
+    --sso-muted-bg: var(--tblr-bg-surface-secondary, #f6f8fb);
+    --sso-primary: var(--tblr-primary, #206bc4);
+    color: var(--tblr-body-color, inherit);
+}
+
+.sso-idp-form {
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+.sso-idp-form .sso-section-row > td {
+    padding: 1.35rem .5rem .55rem !important;
+    background: transparent !important;
+    border: 0 !important;
+}
+
+.sso-idp-form .sso-section-row .hr-text {
+    margin: 0;
+    color: var(--tblr-body-color, inherit);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.sso-idp-form .sso-section-row .hr-text i {
+    color: var(--sso-primary);
+    font-size: 1.2rem;
+}
+
+.sso-idp-form .sso-card-row > td {
+    padding: .2rem .75rem !important;
+    background: transparent !important;
+    border: 0 !important;
+}
+
+.sso-section-card {
+    border: 1px solid var(--sso-border);
+    border-radius: .75rem;
+    background: var(--tblr-bg-surface, #fff);
+    box-shadow: 0 2px 6px rgb(24 36 51 / 5%);
+}
+
+.sso-section-card .card-body {
+    padding: 1.25rem;
+}
+
+.sso-section-card .card-body > .row {
+    row-gap: 1.5rem;
+}
+
+.sso-form-field {
+    min-width: 0;
+}
+
+.sso-form-field > label,
+.sso-setting-label {
+    display: block;
+    margin-bottom: .45rem;
+    color: var(--tblr-body-color, inherit);
+    font-weight: 600;
+}
+
+.sso-form-field > label > i,
+.sso-setting-label > i {
+    color: var(--sso-primary);
+}
+
+.sso-form-field input[type="text"],
+.sso-form-field input[type="password"],
+.sso-form-field textarea {
+    width: 100% !important;
+    max-width: 100%;
+}
+
+.sso-form-field > .select2-container {
+    width: 100% !important;
+}
+
+.sso-field-compact > .select2-container,
+.sso-field-compact > select {
+    max-width: 12rem;
+}
+
+.sso-readonly-value {
+    min-height: 2.65rem;
+    padding: .65rem .8rem;
+    overflow: hidden;
+    background: var(--sso-muted-bg);
+    border: 1px solid var(--sso-border);
+    border-radius: .5rem;
+}
+
+.sso-readonly-value code,
+.sso-readonly-value a {
+    overflow-wrap: anywhere;
+}
+
+.sso-copy-field {
+    display: flex;
+    min-width: 0;
+    align-items: stretch;
+    overflow: visible;
+    border: 0;
+    background: transparent;
+}
+
+.sso-copy-field code {
+    flex: 1;
+    min-width: 0;
+    padding: .65rem .8rem;
+    overflow: hidden;
+    color: inherit;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: var(--sso-muted-bg);
+    border: 1px solid var(--sso-border);
+    border-radius: .5rem;
+}
+
+.sso-copy-button {
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: .35rem;
+    align-items: center;
+    margin-left: 1.25rem !important;
+    border-width: 1px;
+    border-radius: .5rem;
+}
+
+.sso-copy-button.is-copied {
+    color: var(--tblr-success, #2fb344);
+}
+
+.sso-idp-form .sso-token-panel {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 2rem;
+    row-gap: 1.25rem;
+    align-items: center;
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--sso-border);
+}
+
+.sso-token-info {
+    min-width: 0;
+}
+
+.sso-token-info .sso-setting-label {
+    margin-bottom: .65rem;
+}
+
+.sso-token-status {
+    min-height: 1.5rem;
+}
+
+.sso-idp-form .sso-token-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1.25rem !important;
+}
+
+.sso-token-action {
+    display: block;
+    margin: 0;
+}
+
+.sso-token-action + .sso-token-action {
+    margin-top: 1rem !important;
+}
+
+.sso-token-action > .btn {
+    margin: 0 !important;
+}
+
+.sso-button-preview {
+    display: inline-flex;
+    max-width: 100%;
+    gap: 0 !important;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: normal;
+    pointer-events: none;
+}
+
+.sso-button-preview--icon {
+    width: 3.25rem;
+    height: 3.25rem;
+    padding: 0;
+    border-radius: .8rem;
+    justify-content: center;
+}
+
+.sso-button-preview--icon #sso-button-preview-icon {
+    margin-right: 0 !important;
+}
+
+.sso-button-preview--icon .sso-button-preview-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+#sso-button-preview-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 1rem !important;
+}
+
+#sso-button-preview-icon > .sso-brand-icon-frame {
+    margin-right: 0 !important;
+}
+
+.sso-preview-panel {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: .75rem;
+}
+
+.sso-presentation-field > .select2-container {
+    max-width: 14rem;
+}
+
+.sso-idp-form .sso-preview-panel > .sso-setting-label {
+    display: block !important;
+    width: 100%;
+    margin: 0 !important;
+}
+
+.sso-preview-control {
+    display: block;
+    width: 100%;
+}
+
+.sso-preview-control .sso-button-preview {
+    display: inline-flex;
+}
+
+.sso-icon-picker {
+    margin-top: 0;
+}
+
+.sso-icon-combobox {
+    width: 100%;
+    max-width: 28rem;
+}
+
+.sso-advanced-field .sso-icon-advanced {
+    max-width: 28rem;
+}
+
+.sso-icon-combobox .select2-container {
+    width: 100% !important;
+}
+
+.sso-icon-combobox .select2-selection--single {
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 2.75rem;
+}
+
+.sso-icon-option-content {
+    display: grid !important;
+    grid-template-columns: 1.5rem minmax(0, 1fr);
+    column-gap: 1rem !important;
+    align-items: center;
+    direction: ltr !important;
+}
+
+.sso-icon-option-content i {
+    width: 1.4rem;
+    color: var(--sso-primary);
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.sso-icon-option-content > .sso-brand-icon-frame {
+    margin-right: 0 !important;
+}
+
+.sso-brand-icon-frame {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: .25rem;
+}
+
+.sso-brand-icon {
+    display: block;
+    width: 1.125rem;
+    height: 1.125rem;
+    object-fit: contain;
+}
+
+.sso-icon-option-content span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sso-icon-advanced {
+    width: 100%;
+    margin-top: 0;
+    padding: .75rem .9rem;
+    color: var(--tblr-secondary, #626976);
+    background: var(--sso-muted-bg);
+    border: 1px dashed var(--sso-border);
+    border-radius: .6rem;
+}
+
+.sso-icon-advanced summary {
+    display: inline-block;
+    cursor: pointer;
+    font-size: .85rem;
+}
+
+.sso-icon-advanced .input-group {
+    max-width: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .sso-idp-form .sso-token-panel {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .sso-idp-form .sso-token-actions {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .sso-token-action > .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .sso-section-card .card-body {
+        padding: 1rem;
+    }
+
+    .sso-button-preview {
+        width: auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .sso-copy-field {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .sso-copy-field code {
+        width: 100%;
+    }
+
+    .sso-copy-button {
+        margin-top: 1rem !important;
+        margin-left: 0 !important;
+    }
+
+    .sso-copy-button span {
+        display: none;
+    }
+}

@@ -1,0 +1,21 @@
+parameters:
+    level: 5
+    paths:
+        - src
+        - front
+        - setup.php
+        - hook.php
+    excludePaths:
+        - vendor
+        - tests
+        - tools
+    # El plugin se analiza instalado en <glpi>/plugins/sso: el core de GLPI
+    # aporta los símbolos (CommonDBTM, Html, Session, ...) por escaneo.
+    scanDirectories:
+        - ../../src
+        - ../../inc
+        - ../../vendor
+        - vendor
+    bootstrapFiles:
+        - tools/phpstan-bootstrap.php
+    treatPhpDocTypesAsCertain: false
